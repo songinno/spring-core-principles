@@ -27,7 +27,6 @@ public class BeanDefinitionTest {
     *                   ㄴ Generic bean 말고, Root bean: class에서, class 정보가 모두 null
     *                   ㄴ 대신, factoryBeanName, factoryMethodName 정보는 존재
     *                       -> 팩토리 빈에서 팩토리 메서드를 통해 생성이 된다
-    *
     * */
 
     @Test
