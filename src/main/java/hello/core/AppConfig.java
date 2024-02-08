@@ -1,5 +1,6 @@
 package hello.core;
 
+import hello.core.Member.MemberRepository;
 import hello.core.Member.MemberService;
 import hello.core.Member.MemberServiceImpl;
 import hello.core.Member.MemoryMemberRepository;
@@ -43,7 +44,7 @@ public class AppConfig {
     */
 
     @Bean
-    public MemoryMemberRepository memberRepository() {
+    public MemberRepository memberRepository() {
         System.out.println("call - AppConfig.memberRepository");
         return new MemoryMemberRepository();
     }
